@@ -10,8 +10,6 @@ class Cleancoded_String_Replace_Settings {
 
     public $settings;
 
-
-
     public function __construct( $parent ){
 
         $this->parent = $parent;
@@ -22,8 +20,6 @@ class Cleancoded_String_Replace_Settings {
         add_action( 'admin_menu' , array( $this, 'add_menu_item' ) );
 
     }
-
-
 
     private function settings_fields () {
 
@@ -74,19 +70,13 @@ class Cleancoded_String_Replace_Settings {
         return $settings;
     }
 
-
-
     public function init_settings () {
 		$this->settings = $this->settings_fields();
     }
 
-
-
     public function add_menu_item () {
 		add_options_page( 'Cleancoded String Replace', 'Cleancoded String Replace', 'manage_options' , $this->parent->_token . '_settings' ,  array( $this, 'render_settings_page' ) );
     }
-
-
 
     public function register_settings () {
 
@@ -131,15 +121,11 @@ class Cleancoded_String_Replace_Settings {
         
     }
 
-
-
     public function settings_section ( $section ) {
 		$html = '<p> ' . $this->settings[ $section['id'] ]['description'] . '</p>' . "\n";
 		echo $html;
 	}
     
-
-
     public function render_settings_page() {
 
         // Build page HTML
@@ -275,8 +261,6 @@ class Cleancoded_String_Replace_Settings {
 		echo $html;
     }
 
-
-
     public function save_settings() {
         
         // check nonce
@@ -321,8 +305,6 @@ class Cleancoded_String_Replace_Settings {
         return true;
     }
 
-
-
     public function get_inline_styles() {
         return '<style>
             .replaceset {
@@ -358,8 +340,6 @@ class Cleancoded_String_Replace_Settings {
         </style>';
     }
 
-
-
     public function get_inline_scripts($cnt){
         return '<script type="text/javascript">
             var ccd_id_next = ' . $cnt . ';
@@ -389,8 +369,6 @@ class Cleancoded_String_Replace_Settings {
         </script>';
     }
 
-
-
     public function display_replaceset( $cnt, $search, $replace ) {
 
         $html = '<div id="replaceset-' . $cnt . '" class="replaceset">' . "\n";
@@ -411,8 +389,6 @@ class Cleancoded_String_Replace_Settings {
         $html .= '</div>' . "\n";
         return $html;
     }
-
-
 
     public function display_field( $data = array(), $post = false, $echo = true ) {
 
@@ -596,8 +572,6 @@ class Cleancoded_String_Replace_Settings {
         echo $html;
 
     }
-
-
 
     public static function instance( $parent ) {
         if ( is_null( self::$_instance ) ) {
