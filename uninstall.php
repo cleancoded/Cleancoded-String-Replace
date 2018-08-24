@@ -4,7 +4,6 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-
 $delete_settings = ( get_option('cleancoded_strrep_settings_delsettuninst') == 'on' ) ? true : false;
 
 if( $delete_settings ) {
