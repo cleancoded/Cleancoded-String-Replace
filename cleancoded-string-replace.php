@@ -1,23 +1,23 @@
 <?php
 
 /*
- * Plugin Name: Cleancoded String Replace
+ * Plugin Name: CLEANCODED String Replace
  * Plugin URI: https://cleancoded.com/
- * Description: Change anything: cleancoded String Replace takes the final output of WordPress and replaces the defined strings with another string
+ * Description: CLEANCODED String Replace replaces any defined string with another string within any WordPress website.
  * Version: 1.0
  * Author: CLEANCODED
  * Author URI: https://cleancoded.com/
- * License: Cleancoded
+ * License: GPL
  * 
- * cleancoded String Replace is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * any later version.
+ *  CLEANCODED String Replace is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 2 of the License, or
+ *  any later version.
  * 
- * cleancoded String Replace is distributed in the hope that it will be useful,
+ *  CLEANCODED String Replace is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
+ *  GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
  * along with cleancoded String Replace. If not, see https://www.google.com/?q=GNU+General+Public+License
@@ -29,7 +29,6 @@ require_once 'includes/tools.php';
 require_once 'includes/class-cleancoded-string-replace.php';
 require_once 'includes/class-cleancoded-string-replace-settings.php';
 require_once 'includes/class-cleancoded-string-replace-replacer.php';
-
 
 function cleancoded_string_replace(){
 
