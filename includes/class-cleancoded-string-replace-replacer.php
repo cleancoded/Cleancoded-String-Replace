@@ -7,8 +7,6 @@ class Cleancoded_String_Replace_Replacer {
     private static $_instance = null;
     public $parent = null;
 
-
-
     public function __construct( $parent ){
 
         $this->parent = $parent;
@@ -19,8 +17,6 @@ class Cleancoded_String_Replace_Replacer {
         }
 
     }
-
-
 
     public function callback( $buffer ) {
 
@@ -45,8 +41,6 @@ class Cleancoded_String_Replace_Replacer {
         return $buffer;
     }
 
-
-
     public function is_enabled() {
 
         $enabled = (get_option( $this->parent->_token . '_settings_enable', 'on') == 'on') ? true : false;
@@ -67,20 +61,14 @@ class Cleancoded_String_Replace_Replacer {
         return false;
     }
 
-
-
     public function buffer_start() {
         ob_start( array($this, 'callback') );
     }
-
-
 
     public function buffer_end() {
         ob_end_flush();
     }
     
-
-
     public static function instance( $parent ) {
         if ( is_null( self::$_instance ) ) {
             self::$_instance = new self( $parent );
