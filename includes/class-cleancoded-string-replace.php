@@ -14,8 +14,6 @@ class Cleancoded_String_Replace {
     public $file;
     public $dir;
 
-    
-
     public function __construct( $version, $file ) {
 
         $this->_version = $version;
@@ -31,15 +29,11 @@ class Cleancoded_String_Replace {
 
     }
 
-
-
     public function install() {
         update_option( $this->_token . '_version', $this->_version );
         $this->upgrade();
     }
 
-
-    
     public function upgrade() {
 
         $ccd_replace_from = get_option('ccd_from');
@@ -65,7 +59,6 @@ class Cleancoded_String_Replace {
 
     }
 
-
 	/**
 	 * Load plugin textdomain
 	 * @access  public
@@ -78,8 +71,6 @@ class Cleancoded_String_Replace {
 	    load_textdomain( $domain, WP_LANG_DIR . '/' . $domain . '/' . $domain . '-' . $locale . '.mo' );
 	    load_plugin_textdomain( $domain, false, dirname( plugin_basename( $this->file ) ) . '/lang/' );
 	}
-
-
 
     public static function instance( $version, $file ) {
         if ( is_null( self::$_instance ) ) {
