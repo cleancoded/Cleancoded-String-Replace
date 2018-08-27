@@ -2,7 +2,7 @@
 
 /*
  * Plugin Name: String Replace
- * Plugin URI: https://cleancoded.com/
+ * Plugin URI: https://github.com/cleancoded/string-replace
  * Description: String Replace replaces any defined string with another string within any WordPress website.
  * Version: 1.0
  * Author: CLEANCODED
