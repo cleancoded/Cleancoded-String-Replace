@@ -1,4 +1,4 @@
-=== CLEANCODED String Replace ===
+=== String Replace ===
 Contributors: cleancoded
 Tags: string, replace, edit, html, http, https, rewrtite, css, js, javascript, content, add, remove, append
 Requires at least: 3.0.1
@@ -7,10 +7,10 @@ Stable tag: 2.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-CLEANCODED String Replace replaces any defined string with another string within any WordPress website.
+String Replace replaces any defined string with another string within any WordPress website.
 
 == Description ==
-CLEANCODED String Replace replaces any defined string with another string within any WordPress website.
+String Replace replaces any defined string with another string within any WordPress website.
 
 = Here are some common use cases for this tool =
 * HTTPS rewriting (replace "http://domain.com" with "https://domain.com")
